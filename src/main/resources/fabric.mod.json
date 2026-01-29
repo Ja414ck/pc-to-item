@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "pc-to-item",
+  "version": "${version}",
+  "name": "PC To Item",
+  "description": "Browse your Cobblemon PC storage and convert Pokemon to tradeable items. Use /pcbrowser to open the GUI.",
+  "authors": ["Jack Goren"],
+  "contact": {
+    "sources": "https://github.com/YOUR_USERNAME/pc-to-item"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.cobblemon.pctoitem.PCToItem"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.cobblemon.pctoitem.PCToItemClient"
+      }
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "cobblemon": ">=1.6.0",
+    "fabric-language-kotlin": ">=1.12.0"
+  }
+}
